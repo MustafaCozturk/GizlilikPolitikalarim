@@ -61,10 +61,9 @@ FuelioX uygulaması, kullanım amacına uygun işlevini yerine getirmek için ci
 
 ## İletişim
 
-Kişisel verilerinizle ilgili haklarınızı kullanmak veya Gizlilik Politika'mız hakkında daha fazla bilgi almak için mustafacozturk@hotmail.com adresinden bizimle iletişime geçebilirsiniz.
+Kişisel verilerinizle ilgili haklarınızı kullanmak veya Gizlilik Politika'mız hakkında daha fazla bilgi almak için caliskanozturkmustafa@gmail.com adresinden bizimle iletişime geçebilirsiniz.
 
 ## Onay ve Yürürlük
 
 FuelioX uygulaması ile kişisel verilerinizi paylaşmak, tamamen sizin tercihinizdir. Uygulamayı kullanmaya devam ettiğiniz takdirde, bu Gizlilik Politikası'nı kabul ettiğiniz varsayılacaktır. Bu politika, **1 Ocak 2026** tarihinde yürürlüğe girmiş olup, gerektiğinde güncellenir.
 
-Bu Gizlilik Politikası, <a href="https://sartlar.com" rel="noopener" target="_blank">sartlar.com</a> aracılığıyla oluşturulmuştur.
