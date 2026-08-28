@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası ve Kullanım Koşulları - Aklımda</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --badge-bg: #eff6ff;
+            --badge-text: #1d4ed8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 48px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #0f172a;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            color: #166534;
+            font-weight: 500;
+        }
+
+        .alert-box {
+            background-color: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            color: #991b1b;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #0f172a;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #334155;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-info {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 16px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px;
+            }
+            .container {
+                padding: 24px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="badge">Resmi Gizlilik Bildirimi</span>
+        <h1>Gizlilik Politikası ve Sorumluluk Reddi Beyanı</h1>
+        <p class="last-updated"><strong>Uygulama:</strong> Aklımda (com.mustafacaliskanozturk.primecontrol) | <strong>Son Güncelleme:</strong> 28 Ağustos 2026</p>
+    </div>
+
+    <div class="highlight-box">
+        🔒 <strong>SIFIR VERİ POLİTİKASI:</strong> "Aklımda" uygulaması tamamen çevrimdışı (offline-first) mimariyle çalışır. Geliştirici olarak tarafımıza ait herhangi bir sunucu (server), uzaktan veri tabanı veya kullanıcı takip sistemi <u>BULUNMAMAKTADIR</u>. Tüm kişisel verileriniz istisnasız yalnızca sizin kendi cihazınızda saklanır.
+    </div>
+
+    <h2>1. Verilerin Saklanması ve İşlenmesi (Yerel Cihaz)</h2>
+    <p>
+        Uygulama içerisinde oluşturduğunuz tüm hatırlatıcılar, görevler, rutinler, su tüketim kayıtları, sağlık notları, yaş ve ad gibi profil bilgileri doğrudan cihazınızın kendi güvenli dahili hafızasında (Yerel SQLite Veritabanı ve SharedPreferences) saklanır.
+    </p>
+    <ul>
+        <li>Bu veriler geliştirici veya herhangi bir üçüncü taraf sunucusuna aktarılmaz, satılmaz, kiralanmaz ve yedeklenmez.</li>
+        <li>Cihazınız internete bağlı olmasa dahi uygulama tam fonksiyonel olarak çalışmaya devam eder.</li>
+    </ul>
+
+    <h2>2. Biyometrik Kimlik Doğrulama (Face ID / Touch ID / Parmak İzi)</h2>
+    <p>
+        Uygulama, güvenliğiniz için Apple Touch ID / Face ID ve Android Biyometrik API'lerini kullanabilir. Biyometrik verileriniz doğrudan işletim sisteminizin (iOS/Android) donanımsal güvenlik çipi (Secure Enclave) tarafından doğrulanır. Geliştirici veya uygulama, parmak izinize veya yüz tarama verilerinize asla erişemez ve bu verileri göremez.
+    </p>
+
+    <h2>3. İzinler ve Kullanım Amaçları</h2>
+    <p>Uygulamanın düzgün çalışabilmesi için cihazınızdan talep edilen izinler ve gerekçeleri şunlardır:</p>
+    <ul>
+        <li><strong>Bildirim İzni (POST_NOTIFICATIONS):</strong> Yalnızca kullanıcının kendi kurduğu saatlerde yerel olarak alarm ve hatırlatma uyarısı göndermek amacıyla kullanılır.</li>
+        <li><strong>Alarm ve Kesin Zamanlama İzni (SCHEDULE_EXACT_ALARM):</strong> Hatırlatıcıların tam dakikasında çalmasını sağlamak için işletim sistemine zamanlayıcı kaydı oluşturur.</li>
+    </ul>
+
+    <h2>4. Üçüncü Taraf Hizmetler ve Reklamlar</h2>
+    <p>
+        Uygulama, temel işlevlerini ücretsiz sunabilmek amacıyla Google AdMob reklam ağını kullanmaktadır. Google AdMob, kişiselleştirilmiş veya kişiselleştirilmemiş reklam gösterimi yapabilmek için Google'ın kendi gizlilik ilkeleri uyarınca cihaz tanımlayıcıları (IDFA, Reklam Kimliği gibi) kullanabilir. Bu hizmetlerin veri işleme prensipleri tamamen Google'ın kendi sorumluluğundadır:
+    </p>
+    <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik ve Güvenlik Politikaları</a></li>
+    </ul>
+
+    <div class="alert-box">
+        ⚠️ <strong>KESİN SORUMLULUK REDDİ VE GARANTİ VERİLMEMESİ (DISCLAIMER OF LIABILITY):</strong>
+        <br><br>
+        1. <strong>Veri Kaybı ve Yedekleme Sorumluluğu:</strong> Uygulama herhangi bir bulut sunucuya bağlı olmadığı için, cihazın çalınması, bozulması, formatlanması veya uygulamanın silinmesi durumunda oluşabilecek veri kayıplarından <u>tamamen kullanıcı sorumludur</u>. Geliştirici bu verileri geri getirme yükümlülüğü veya teknik imkanına sahip değildir.
+        <br><br>
+        2. <strong>Geciken veya Çalmayan Bildirimler:</strong> Akıllı telefon işletim sistemlerinin (Android & iOS) arka plan kısıtlamaları, "Pil Tasarruf / Düşük Güç Modları", "Rahatsız Etmeyin / Odak Modları" veya üretici bazlı (Xiaomi, Samsung vb.) agresif RAM temizleme protokolleri nedeniyle bazı bildirimlerin gecikmesi veya çalmaması durumunda doğabilecek doğrudan veya dolaylı hiçbir maddi/manevi zarardan <u>geliştirici sorumlu tutulamaz</u>.
+        <br><br>
+        3. <strong>Tıbbi ve Hayati Sorumluluk Reddi:</strong> "Aklımda" bir kişisel ajanda ve hatırlatıcı uygulamasıdır; tıbbi bir cihaz, teşhis aracı veya hayati izleme mekanizması <u>değildir</u>. İlaç, tansiyon veya sağlık hatırlatmalarının birincil takip sorumluluğu kullanıcıya ve sağlık profesyonellerine aittir.
+    </div>
+
+    <h2>5. Çocukların Gizliliği</h2>
+    <p>
+        Uygulamamız 13 yaşın altındaki çocuklardan bilerek herhangi bir kişisel veri toplamaz. Uygulama zaten genel olarak sunucu bazlı hiçbir kullanıcı verisi toplamamaktadır.
+    </p>
+
+    <h2>6. Politikadaki Değişiklikler</h2>
+    <p>
+        Gizlilik politikamız zaman zaman güncellenebilir. Herhangi bir değişiklik durumunda yeni politika bu sayfa üzerinden yayınlanacaktır. Uygulamayı kullanmaya devam etmeniz, bu koşulları kabul ettiğiniz anlamına gelir.
+    </p>
+
+    <h2>7. İletişim Bilgileri</h2>
+    <div class="contact-info">
+        <p>Gizlilik politikası veya uygulamanın kullanımıyla ilgili tüm soru ve bildirimleriniz için geliştirici ile doğrudan iletişime geçebilirsiniz:</p>
+        <p><strong>Geliştirici:</strong> Mustafa ÇALIŞKANÖZTÜRK</p>
+        <p><strong>E-Posta:</strong> <a href="mailto:caliskanozturkmustafa@gmail.com">caliskanozturkmustafa@gmail.com</a></p>
+        <p><strong>Konum:</strong> İstanbul, Türkiye</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Mustafa ÇALIŞKANÖZTÜRK. Tüm hakları saklıdır.
+    </div>
+</div>
+
+</body>
+</html>
