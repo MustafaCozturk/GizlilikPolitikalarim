@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Nonogram: Piksel Mantık Bulmaca</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --shield-bg: #ecfdf5;
+            --shield-border: #10b981;
+            --shield-text: #065f46;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 48px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        .shield-box {
+            background-color: var(--shield-bg);
+            border: 2px solid var(--shield-border);
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+            color: var(--shield-text);
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .shield-box h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #047857;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 14px;
+            color: #334155;
+            font-size: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: #334155;
+            font-size: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Gizlilik Politikası (Privacy Policy)</h1>
+        <div class="meta-info">
+            <strong>Uygulama Adı:</strong> Nonogram: Piksel Mantık Bulmaca<br>
+            <strong>Paket Adı (Package Name):</strong> com.mustafacaliskanozturk.nonogram<br>
+            <strong>Geliştirici:</strong> Mustafa Çalışkanöztürk<br>
+            <strong>Yürürlük Tarihi:</strong> 2 Eylül 2026
+        </div>
+    </header>
+
+    <div class="shield-box">
+        <h3>🛡️ Sıfır Geliştirici Verisi Beyanı (Zero-Data Retention)</h3>
+        Uygulama geliştiricisi olarak <strong>tarafımıza ait hiçbir harici sunucu, veri tabanı veya kullanıcı kayıt mekanizması bulunmamaktadır</strong>. Geliştirici; kullanıcıların kişisel bilgilerini (ad, soyad, e-posta, konum, kimlik vb.) asla toplamaz, saklamaz, işlemez, satmaz veya üçüncü şahıslara aktarmaz. Uygulama tamamen bağımsız ve sunucusuz (serverless) çalışır.
+    </div>
+
+    <h2>1. Geliştiricinin Sorumluluk Sınırları ve Veri İzolasyonu</h2>
+    <p>Geliştirici Mustafa Çalışkanöztürk, uygulama kullanıcılarına ait hiçbir veriye erişim yetkisine sahip değildir ve bu tür verilere aracılık etmez. Kullanıcının oyun içindeki ilerlemesi (tamamlanan seviyeler, kazanılan elmaslar ve ayarlar) yalnızca kullanıcının kendi fiziksel cihazının yerel hafızasında (yerel depolama) tutulur. Cihazınızdan harici hiçbir sunucuya veri aktarımı yapılmaz.</p>
+
+    <h2>2. Üçüncü Taraf Hizmetleri (Google LLC) ve Veri İşleme</h2>
+    <p>Uygulamanın çalışması, reklam sunumu ve teknik işlevleri yalnızca bağımsız küresel platform sağlayıcısı olan <strong>Google LLC</strong> tarafından sağlanan standart kütüphaneler aracılığıyla yürütülmektedir. Bu servisler aracılığıyla işlenen her türlü veri doğrudan kullanıcının cihazı ile Google sunucuları arasında gerçekleşir ve geliştiricinin bu verilere erişimi veya müdahale imkanı bulunmamaktadır:</p>
+    
+    <ul>
+        <li>
+            <strong>Google AdMob (Google LLC Reklam Servisi):</strong>  
+            Uygulamanın ücretsiz kalabilmesi için Google AdMob kütüphanesi kullanılmaktadır. Google AdMob; reklam yayınlama, sıklık sınırlandırması ve dolandırıcılık tespiti amacıyla cihazın standart reklam kimliğini (Google Advertising ID / GAID) ve kaba cihaz bilgilerini kendi gizlilik politikaları çerçevesinde otomatik olarak işleyebilir.  
+            <br>Google Gizlilik ve Şartlar: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>  
+            <br>Google Reklam Teknolojileri: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>
+        </li>
+        <li>
+            <strong>Google Play Faturalandırma Sistemi (Google Play In-App Billing):</strong>  
+            Uygulama içinde isteğe bağlı olarak yapılan elmas satın alımları veya reklam kaldırma işlemleri tamamen Google Play Store altyapısı üzerinden şifreli olarak gerçekleştirilir. Kredi kartı, banka bilgisi veya fatura detayları geliştirici tarafından hiçbir şekilde görülemez, işlenemez veya saklanamaz.
+        </li>
+    </ul>
+
+    <h2>3. Veri İhlali ve Güvenlik Muafiyeti</h2>
+    <p>Geliştirici bünyesinde herhangi bir kullanıcı verisi, sunucu veya bulut sistemi barındırılmadığından, geliştirici kaynaklı bir veri sızıntısı veya veri ihlali yaşanması teknik olarak mümkün değildir. Üçüncü taraf sağlayıcı olan Google servislerinin kullanımıyla ilgili tüm güvenlik ve gizlilik yükümlülükleri doğrudan Google LLC'nin küresel güvenlik taahhütleri altındadır.</p>
+
+    <h2>4. Çocukların Gizliliği (COPPA & GDPR-K Uyumlu)</h2>
+    <p>Uygulama, çocuklar da dahil olmak üzere her yaştan kullanıcının güvenle oynayabileceği bir mantık bulmacasıdır. Geliştirici hiçbir kullanıcıdan yaş, kimlik veya iletişim verisi talep etmez. Çocuklara ait herhangi bir kişisel veri geliştirici tarafından kesinlikle toplanmamaktadır.</p>
+
+    <h2>5. Kullanıcı Tarafından Verilerin Silinmesi</h2>
+    <p>Oyun ilerlemeniz yalnızca kendi cihazınızda depolandığından, dilediğiniz an cihazınızın <em>Ayarlar ➔ Uygulamalar ➔ Nonogram ➔ Verileri Temizle</em> seçeneğini kullanarak veya uygulamayı kaldırarak tüm oyun geçmişinizi anında ve kalıcı olarak sıfırlayabilirsiniz.</p>
+
+    <h2>6. İletişim Bilgileri</h2>
+    <p>Bu politika veya uygulamanın işleyişi hakkında bilgi almak isterseniz geliştiriciye aşağıdaki e-posta adresinden ulaşabilirsiniz:</p>
+    <ul>
+        <li><strong>Geliştirici:</strong> Mustafa Çalışkanöztürk</li>
+        <li><strong>E-posta:</strong> <a href="mailto:mustafacaliskanozturk@gmail.com">mustafacaliskanozturk@gmail.com</a></li>
+    </ul>
+
+    <footer>
+        &copy; 2026 Nonogram: Piksel Mantık Bulmaca. Tüm hakları saklıdır.
+    </footer>
+</div>
+
+</body>
+</html>
