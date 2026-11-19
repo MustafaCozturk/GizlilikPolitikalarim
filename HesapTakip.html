@@ -3,35 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HesapTakip — Gizlilik Politikası</title>
+  <title>HesapTakip — Privacy Policy & Disclaimer (TR / EN / DE / AR)</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f9fd; color: #16263b; margin: 0; padding: 32px 18px; line-height: 1.65; }
-    main { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid #e6edf3; border-radius: 20px; padding: 32px; box-shadow: 0 8px 28px rgba(22, 38, 59, 0.06); }
-    h1 { margin-top: 0; font-size: 26px; color: #096c76; }
-    h2 { font-size: 18px; margin-top: 26px; color: #16263b; }
-    p, li { color: #3e556b; font-size: 15px; }
-    .meta { font-size: 13px; color: #6b7f94; margin-bottom: 24px; }
+    :root { --bg: #f2f7fc; --card: #ffffff; --border: #dce8f2; --navy: #102033; --muted: #5d7289; --emerald: #009b82; --emerald-dark: #045d6b; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--navy); margin: 0; padding: 28px 16px; line-height: 1.65; }
+    main { max-width: 820px; margin: 0 auto; background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 32px; box-shadow: 0 12px 34px rgba(16, 32, 51, 0.06); }
+    .lang-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    .lang-btn { border: 1px solid var(--border); background: var(--bg); color: var(--navy); padding: 9px 16px; border-radius: 99px; font-weight: 700; font-size: 13px; cursor: pointer; transition: all 0.18s; }
+    .lang-btn.active { background: var(--emerald); color: #fff; border-color: var(--emerald); }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    .lang-section[dir="rtl"] { text-align: right; font-family: Tahoma, "Segoe UI", -apple-system, sans-serif; }
+    h1 { margin: 0 0 6px; font-size: 25px; color: var(--emerald-dark); }
+    h2 { font-size: 17px; margin-top: 24px; margin-bottom: 8px; color: var(--navy); }
+    p, li { color: #334e68; font-size: 14.5px; margin: 6px 0; }
+    .meta { font-size: 12.5px; color: var(--muted); margin-bottom: 18px; }
+    .alert { background: #fff4e5; border: 1px solid #ffd8a8; border-radius: 14px; padding: 14px 16px; margin: 16px 0; font-weight: 600; color: #7c3a00; }
   </style>
 </head>
 <body>
   <main>
-    <h1>HesapTakip Gizlilik Politikası</h1>
-    <p class="meta">Son güncelleme: 19 Kasım 2026 · Uygulama Kimliği: com.mustafacozturk.hesaptakip</p>
+    <div class="lang-bar">
+      <button class="lang-btn active" onclick="setLang('tr', this)">🇹🇷 Türkçe</button>
+      <button class="lang-btn" onclick="setLang('en', this)">🇬🇧 English</button>
+      <button class="lang-btn" onclick="setLang('de', this)">🇩🇪 Deutsch</button>
+      <button class="lang-btn" onclick="setLang('ar', this)">🇸🇦 العربية</button>
+    </div>
 
-    <h2>1. Toplanan Veriler</h2>
-    <p>HesapTakip, kullanıcının kendi isteğiyle girdiği kredi kartı ekstre/vade kayıtlarını, firma/cari hesap hareketlerini, banka/POS/nakit kasa bakiyelerini ve hatırlatmaları yalnızca finansal takip amacıyla saklar. Tam kredi kartı numarası, CVV veya banka internet şifresi kesinlikle istenmez ve saklanmaz.</p>
+    <!-- TÜRKÇE -->
+    <section id="lang-tr" class="lang-section active">
+      <h1>HesapTakip — Gizlilik Politikası ve Sorumluluk Reddi</h1>
+      <p class="meta">Son Güncelleme: 19 Kasım 2026 · Uygulama Kimliği: com.mustafacozturk.hesaptakip</p>
+      <div class="alert">
+        ÖNEMLİ BİLDİRİM: HesapTakip herhangi bir bulut veri barındırma, sunucu depolama veya finansal danışmanlık hizmeti SUNMAZ. Uygulamaya girilen tüm verilerin mülkiyeti, doğruluğu, yedeklenmesi ve güvenliği %100 kullanıcıya aittir; geliştirici hiçbir veri kaybından veya mali/hukuki sonuçtan sorumlu değildir.
+      </div>
+      <h2>1. Veri Barındırma Hizmetimizin Olmaması (%100 Yerel Çalışma)</h2>
+      <p>HesapTakip tamamen kullanıcının kendi cihazı üzerinde (çevrimdışı / yerel) çalışan bir kayıt ve hesaplama aracıdır. Geliştiriciye ait herhangi bir uzak sunucu veya veritabanı bulunmamaktadır. Kullanıcının girdiği kart, taksit, cari hesap, kasa, banka veya çek/senet bilgileri tarafımızca <strong>toplanmaz, görülmez, işlenmez, saklanmaz ve hiçbir sunucuya aktarılmaz</strong>.</p>
+      <h2>2. Verilerin Mülkiyeti ve Sorumluluk Reddi (Disclaimer)</h2>
+      <ul>
+        <li>Uygulamaya girilen tüm veriler münhasıran kullanıcıya (müşteriye) aittir.</li>
+        <li>Cihazın kaybolması, bozulması, silinmesi, işletim sistemi hataları, şifre unutulması veya yedek alınmaması sebebiyle oluşabilecek <strong>hiçbir veri kaybından geliştirici sorumlu tutulamaz</strong>.</li>
+        <li>Uygulama "OLDUĞU GİBİ" (AS-IS) sunulmaktadır. Uygulamadaki hesaplamalar yalnızca kişisel/ön takip amaçlıdır; resmi muhasebe, vergi beyanı veya finansal tavsiye yerine geçmez. Yanlış veri girişi veya hesaplama farklılıklarından doğabilecek doğrudan ya da dolaylı hiçbir ticari, mali veya hukuki zarardan geliştirici sorumlu değildir.</li>
+      </ul>
+      <h2>3. Kullanıcı Tarafından Yapılan Bulut Yedeklemeleri (iCloud / Google Drive)</h2>
+      <p>Kullanıcının kendi isteğiyle oluşturduğu yedek dosyaları (<code>.json</code> / <code>.csv</code>), doğrudan kullanıcının kendi kişisel Apple iCloud Drive veya Google Drive hesabına ya da cihaz hafızasına kaydedilir. Geliştiricinin bu yedek dosyalarına erişimi, kontrolü veya kurtarma yetkisi yoktur.</p>
+      <h2>4. Üçüncü Taraf Reklamlar (Google AdMob)</h2>
+      <p>Ücretsiz sürümde reklam gösterimi için yalnızca Google AdMob SDK'sı kullanılmaktadır. Google AdMob, kendi gizlilik politikası kapsamında reklam sunumu amacıyla cihaz reklam kimliğini (IDFA / AAID) işleyebilir.</p>
+      <h2>5. Veri Silme ve İletişim</h2>
+      <p>Tüm veriler cihazınızda tutulduğu için <strong>Genel Ayarlar &rarr; Tüm Verileri Sıfırla</strong> butonuyla veya uygulamayı cihazdan kaldırarak tüm kayıtlarınızı anında silebilirsiniz. İletişim: <strong>caliskanozturkmustafa@gmail.com</strong></p>
+    </section>
 
-    <h2>2. Veri Saklama ve Güvenlik</h2>
-    <p>HesapTakip tamamen cihaz içi (yerel) çalışır. Tüm finansal verileriniz yalnızca kendi cihazınızda saklanır ve hiçbir harici sunucuya gönderilmez. İsteğe bağlı olarak aldığınız yedek dosyaları yalnızca sizin kendi iCloud Drive (iOS) veya Google Drive (Android) hesabınızda saklanır.</p>
+    <!-- ENGLISH -->
+    <section id="lang-en" class="lang-section">
+      <h1>HesapTakip — Privacy Policy & Disclaimer of Liability</h1>
+      <p class="meta">Last Updated: November 19, 2026 · App ID: com.mustafacozturk.hesaptakip</p>
+      <div class="alert">
+        IMPORTANT NOTICE: HesapTakip DOES NOT provide any cloud data hosting, server storage, or financial advisory services. 100% of the data entered belongs solely to the user. The developer assumes zero liability for any data loss, calculation discrepancy, or financial/legal consequence.
+      </div>
+      <h2>1. No Data Hosting or Server Service (100% Local-First)</h2>
+      <p>HesapTakip operates exclusively on your local device. We do not operate any backend servers or databases to store your financial records. Any credit card, installment, receivable, payable, bank, or cash records you enter are <strong>never collected, viewed, transmitted, or stored by the developer</strong>.</p>
+      <h2>2. Data Ownership & Complete Disclaimer of Liability</h2>
+      <ul>
+        <li>All data entered into the application is owned 100% by the user (customer) and remains under the user's sole custody and responsibility.</li>
+        <li>The developer bears <strong>no responsibility or liability whatsoever for any loss, corruption, or unauthorized access of data</strong> resulting from device loss, hardware failure, OS updates, app uninstallation, or failure to maintain backups.</li>
+        <li>The app is provided strictly <strong>"AS IS"</strong> without warranties of any kind. Calculations are for informational tracking only and do not constitute official accounting, tax, or legal advice. The developer shall not be liable for any direct, indirect, commercial, or financial damages.</li>
+      </ul>
+      <h2>3. User-Controlled Backups (iCloud Drive / Google Drive)</h2>
+      <p>Optional backup files (<code>.json</code> / <code>.csv</code>) exported by the user are saved directly to the user's own Apple iCloud Drive, Google Drive, or local storage. The developer has no access to, control over, or ability to recover user backups.</p>
+      <h2>4. Third-Party Advertising (Google AdMob)</h2>
+      <p>The free version uses Google AdMob to display banner advertisements. Google AdMob may process device advertising identifiers (IDFA/AAID) under Google's Privacy Policy.</p>
+      <h2>5. Data Deletion & Contact</h2>
+      <p>Because all records reside solely on your device, you can permanently erase all data at any time via <strong>General Settings &rarr; Reset All Data</strong> or by uninstalling the app. Contact: <strong>caliskanozturkmustafa@gmail.com</strong></p>
+    </section>
 
-    <h2>3. Reklamlar (Google AdMob)</h2>
-    <p>Uygulama, ücretsiz kullanımın sürdürülebilmesi için Google AdMob üzerinden banner reklamlar gösterebilir. Google AdMob, reklam sunumu ve ölçümü için cihaz tanımlayıcıları (IDFA/AAID) veya yaklaşık konum gibi teknik verileri Google Gizlilik Politikası çerçevesinde işleyebilir. iOS kullanıcıları Uygulama Takibi Şeffaflığı (ATT) iznini dilediği zaman cihaz ayarlarından yönetebilir.</p>
+    <!-- DEUTSCH -->
+    <section id="lang-de" class="lang-section">
+      <h1>HesapTakip — Datenschutzerklärung & Haftungsausschluss</h1>
+      <p class="meta">Stand: 19. November 2026 · App-ID: com.mustafacozturk.hesaptakip</p>
+      <div class="alert">
+        WICHTIGER HINWEIS: HesapTakip bietet KEINE Cloud-Datenspeicherung, Serverdienste oder Finanzberatung an. Alle eingegebenen Daten gehören zu 100 % dem Nutzer. Der Entwickler übernimmt keinerlei Haftung für Datenverlust oder finanzielle/rechtliche Folgen.
+      </div>
+      <h2>1. Kein Server- oder Datenspeicherdienst (100 % Lokal)</h2>
+      <p>HesapTakip arbeitet ausschließlich lokal auf Ihrem Endgerät. Wir betreiben keine Server zur Speicherung Ihrer Finanzdaten. Alle von Ihnen eingegebenen Karten-, Raten-, Kassen-, Bank- oder Forderungsdaten werden vom Entwickler <strong>weder erhoben noch eingesehen, übertragen oder gespeichert</strong>.</p>
+      <h2>2. Dateneigentum & Vollständiger Haftungsausschluss</h2>
+      <ul>
+        <li>Sämtliche in die App eingegebenen Daten stehen im alleinigen Eigentum und in der alleinigen Verantwortung des Nutzers.</li>
+        <li>Der Entwickler übernimmt <strong>keinerlei Haftung für Datenverluste oder Schäden</strong>, die durch Geräteverlust, Defekt, Deinstallation oder fehlende Sicherungen entstehen.</li>
+        <li>Die App wird ohne jegliche Gewährleistung <strong>„WIE BESEHEN" (AS-IS)</strong> bereitgestellt und ersetzt keine offizielle Buchhaltung oder Steuerberatung. Für direkte oder indirekte finanzielle oder geschäftliche Schäden wird jede Haftung ausgeschlossen.</li>
+      </ul>
+      <h2>3. Nutzergesteuerte Backups (iCloud Drive / Google Drive)</h2>
+      <p>Vom Nutzer exportierte Sicherungsdateien (<code>.json</code> / <code>.csv</code>) werden direkt im persönlichen Apple iCloud Drive, Google Drive oder Gerätespeicher des Nutzers abgelegt. Der Entwickler hat keinen Zugriff auf diese Dateien.</p>
+      <h2>4. Werbung von Drittanbietern (Google AdMob)</h2>
+      <p>Die kostenlose Version nutzt Google AdMob zur Anzeige von Bannerwerbung. Dabei können Geräte-Werbe-IDs (IDFA/AAID) gemäß der Google-Datenschutzerklärung verarbeitet werden.</p>
+      <h2>5. Datenlöschung & Kontakt</h2>
+      <p>Sie können alle lokalen Daten jederzeit unter <strong>Allgemeine Einstellungen &rarr; Alle Daten zurücksetzen</strong> oder durch Deinstallation der App löschen. Kontakt: <strong>caliskanozturkmustafa@gmail.com</strong></p>
+    </section>
 
-    <h2>4. Hesap ve Veri Silme Hakkı</h2>
-    <p>Kullanıcılar hesaplarının ve ilişkili tüm finansal kayıtlarının kalıcı olarak silinmesini uygulama içi <strong>Hesap Seçenekleri &rarr; Hesap Silme / Destek</strong> bölümünden veya geliştirici destek e-postası üzerinden talep edebilir. Talepler en geç 7 iş günü içinde işleme alınır.</p>
-
-    <h2>5. İletişim</h2>
-    <p>Gizlilik ve veri silme talepleriniz için: <strong>mustafacozturk2010@gmail.com</strong></p>
+    <!-- ARABIC (RTL) -->
+    <section id="lang-ar" class="lang-section" dir="rtl">
+      <h1>HesapTakip — سياسة الخصوصية وإخلاء المسؤولية</h1>
+      <p class="meta">آخر تحديث: 19 نوفمبر 2026 · معرف التطبيق: com.mustafacozturk.hesaptakip</p>
+      <div class="alert">
+        إشعار هام: لا يقدم تطبيق HesapTakip أي خدمات استضافة بيانات سحابية أو تخزين على خوادم خارجية أو استشارات مالية. جميع البيانات المدخلة هي ملك للمستخدم بنسبة 100% وتقع تحت مسؤوليته الكاملة، ولا يتحمل المطور أي مسؤولية عن فقدان البيانات أو أي تبعات مالية أو قانونية.
+      </div>
+      <h2>1. عدم وجود خوادم أو خدمات تخزين بيانات (عمل محلي 100%)</h2>
+      <p>يعمل تطبيق HesapTakip بالكامل محلياً على جهازك فقط. نحن لا نمتلك أو نشغل أي خوادم لحفظ بياناتك المالية. جميع سجلات البطاقات، الأقساط، الديون، الصندوق أو الحسابات البنكية التي تدخلها <strong>لا يتم جمعها أو الاطلاع عليها أو نقلها أو تخزينها من قبل المطور مطلقاً</strong>.</p>
+      <h2>2. ملكية البيانات وإخلاء المسؤولية الكامل</h2>
+      <ul>
+        <li>جميع البيانات المدخلة في التطبيق مملوكة بالكامل للمستخدم (العميل) وتقع على عاتقه وحده مسؤولية صحتها وحمايتها ونسخها احتياطياً.</li>
+        <li><strong>لا يتحمل المطور أي مسؤولية قانونية أو مالية عن أي فقدان أو تلف للبيانات</strong> ناتج عن ضياع الجهاز، تعطله، حذف التطبيق أو عدم إجراء نسخ احتياطي.</li>
+        <li>يُقدم التطبيق <strong>"كما هو" (AS-IS)</strong> لأغراض المتابعة الشخصية فقط ولا يُعد بديلاً عن المحاسبة الرسمية أو الاستشارات الضريبية. لا يتحمل المطور أي مسؤولية عن أي أضرار تجارية أو مالية مباشرة أو غير مباشرة.</li>
+      </ul>
+      <h2>3. النسخ الاحتياطي السحابي الخاص بالمستخدم (iCloud / Google Drive)</h2>
+      <p>يتم حفظ ملفات النسخ الاحتياطي (<code>.json</code> / <code>.csv</code>) مباشرة في حساب المستخدم الشخصي على Apple iCloud Drive أو Google Drive أو ذاكرة الجهاز. لا يملك المطور أي صلاحية للوصول إلى هذه الملفات أو استعادتها.</p>
+      <h2>4. إعلانات الطرف الثالث (Google AdMob)</h2>
+      <p>يستخدم الإصدار المجاني خدمة Google AdMob لعرض الإعلانات، والتي قد تعالج معرف الإعلانات الخاص بالجهاز (IDFA/AAID) وفقاً لسياسة خصوصية Google.</p>
+      <h2>5. حذف البيانات والتواصل</h2>
+      <p>يمكنك حذف جميع بياناتك نهائياً في أي وقت من داخل التطبيق عبر <strong>الإعدادات العامة &larr; إعادة تعيين جميع البيانات</strong> أو بحذف التطبيق من جهازك. للتواصل: <strong>caliskanozturkmustafa@gmail.com</strong></p>
+    </section>
   </main>
+  <script>
+    function setLang(code, btn) {
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('lang-' + code).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
 </body>
 </html>
